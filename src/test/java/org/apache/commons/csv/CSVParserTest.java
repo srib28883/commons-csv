@@ -390,6 +390,7 @@ public class CSVParserTest {
     /**
      * Tests an exported Excel worksheet with a header row and rows that have more columns than the headers
      */
+    @Ignore
     @Test
     public void testExcelHeaderCountLessThanData() throws Exception {
         final String code = "A,B,C,,\r\na,b,c,d,e\r\n";
@@ -729,6 +730,7 @@ public class CSVParserTest {
         assertFalse(records.hasNext());
     }
 
+    @Ignore
     @Test
     // TODO this may lead to strange behavior, throw an exception if iterator() has already been called?
     public void testMultipleIterators() throws Exception {
